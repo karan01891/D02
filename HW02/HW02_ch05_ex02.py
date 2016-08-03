@@ -21,6 +21,24 @@
 # Write your functions below:
 # Body
 
+import math
+def check_fermat_ints():
+
+ a = int(input("Enter a number"))
+ b = int(input("Enter a number"))
+ c = int(input("Enter a number"))
+ d = int(input("Enter a number"))
+
+ x = a ** d + b ** d
+ y = c ** d
+
+ if (d> 2):
+  if (x == y) :
+   print (" Femat was right")
+  else:
+   print ( " he was wrong")
+#print (x) 
+#print (y)
 
 
 
@@ -39,9 +57,8 @@ def main():
     check_fermat_ints()
     check_fermat()
     """
-    print("Hello World!")
 
-
+check_fermat_ints()
 
 if __name__ == "__main__":
     main()
