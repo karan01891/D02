@@ -16,8 +16,9 @@
 # Body
 
 
-
-
+def right_justify (name):
+  print(" " * (70 - len(name)) + name)
+  
 
 
 
@@ -26,8 +27,9 @@
 def main():
     """Call your functions within this function."""
     print("Hello World!")
-    right_justify("Python")
-    right_justify("YOUR_NAME")
+    name = input ("Enter your name")
+    right_justify(name)
+    #right_justify("YOUR_NAME")
 
 if __name__ == "__main__":
     main()
